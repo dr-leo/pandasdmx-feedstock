@@ -1,9 +1,5 @@
 {% set name = "pandaSDMX" %}
-<<<<<<< Updated upstream
-{% set version = "1.0.1" %}
-=======
 {% set version = "1.1.0" %}
->>>>>>> Stashed changes
 
 package:
   name: {{ name|lower }}
@@ -11,11 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-<<<<<<< Updated upstream
-  sha256: ec85a6606635ebd02af9f6df535faf7e38b398f302429e27f70ecf30de80569e
-=======
   sha256: d225cfef0e7a9f0a76b47f099edbb18af2ae8c549908899831a54af5f9edd897
->>>>>>> Stashed changes
 
 build:
   number: 0
