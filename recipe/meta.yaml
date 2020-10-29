@@ -1,5 +1,5 @@
 {% set name = "pandaSDMX" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d225cfef0e7a9f0a76b47f099edbb18af2ae8c549908899831a54af5f9edd897
+  sha256: ad33ff7990e06c3b32ac1f71caee824a67ed36abac8edc12d04d986b8e0a1295
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7, <3.9
     - flit >=2.3
     - pip
   run:
-    - python >=3.7
+    - python >=3.7, <3.9
     - lxml >=3.6
     - pandas >=0.24
     - pydantic >=1.1
